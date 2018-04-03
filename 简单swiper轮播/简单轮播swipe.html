@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        .slideImg{
+            width:500px;
+            height:300px;
+            
+            float:left;
+        }
+        .slideImg img{
+            width:100%;
+            height:100%;
+        }
+        .slide-content{
+            width:500%;
+            height:300px;
+            overflow: hidden;
+        }
+        .slide{
+            width:500px;
+            height:300px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+      
+		<!--遮罩层-->	
+		<div class="slide swiper-container">
+               
+                <div class="slide-content swiper-wrapper">
+                    
+                        <div class="slideImg fl swiper-slide">
+                            <img src="img/t01fba4c0b99478dd87.jpg" />
+                        </div>
+                        <div class="slideImg fl swiper-slide">
+                            <img src="img/t01eed71b16615b3f51.jpg"/>
+                        </div>
+                        <div class="slideImg fl swiper-slide">
+                            <img src="img/t01fba4c0b99478dd87.jpg"/>
+                        </div>
+                    
+                </div>
+                <div class="swiper-pagination">
+                        
+                </div>
+               
+            </div>   
+ 
+</body>
+<script src="js/swiper.min.js"></script>
+<script>
+    	var mySwiper = new Swiper(".swiper-container",{
+				//是否循环滚动
+				loop:true,
+				//自动滚动时间
+				autoplay: 2000,
+				//指定分页组件,选择器
+				pagination : ".swiper-pagination",
+				//点击分页,是否切换图片
+				paginationClickable: true
+			})
+</script>
+</html>
